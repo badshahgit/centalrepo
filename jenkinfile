@@ -1,0 +1,37 @@
+pipeline{
+    agent any{
+    }
+    stages{
+        stage("continuous download"){
+            steps{
+                echo "continuous download"
+            }
+            stages{
+        stage("continuous build"){
+            steps{
+                echo "continuous build"
+            }
+            stages{
+        stage("continuous deploy"){
+            steps{
+                echo "continuous deploy"
+            }
+        }
+            }
+                }
+            }
+        }
+    
+    post{
+        always{
+            echo "========always========"
+        }
+        success{
+            echo "========pipeline executed successfully ========"
+        }
+        failure{
+            echo "========pipeline execution failed========"
+        }
+    }
+    }
+}
