@@ -4,6 +4,7 @@ pipeline {
     stage('continuous download') {
       steps {
         echo 'download success'
+        sh 'mkdir patel'
       }
     }
 
