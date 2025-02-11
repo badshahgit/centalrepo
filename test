@@ -57,3 +57,6 @@ cli_pager=
 role_arn = arn:aws:iam::767904843959:role/AdministratorAccessRole
 mfa_serial = arn:aws:iam::284207296423:mfa/sultan.patel
 source_profile = venture-steelbuy-users
+
+
+AKIAUELATF6T3Y2TNEHP5jRUCD93vbC87jrgkc/V2WPs0PFkqBbS7oz91AUP
