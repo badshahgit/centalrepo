@@ -60,3 +60,7 @@ source_profile = venture-steelbuy-users
 
 
 AKIAUELATF6T3Y2TNEHP5jRUCD93vbC87jrgkc/V2WPs0PFkqBbS7oz91AUP
+
+[venture-steelbuy-users]
+aws_access_key_id = AKIAUELATF6T3Y2TNEHPde
+aws_secret_access_key = 5jRUCD93vbC87jrgkc/V2WPs0PFkqBbS7oz91AUPde
