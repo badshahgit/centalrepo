@@ -1,2 +1,22 @@
-hebh
-twai*yusm0ving*VOOD
+export const handler = function(event, context) {
+
+  // Extract the custom attribute from userAttributes, or set a default value
+  const region = event.request.userAttributes["custom:region"] || "en";
+
+  //console.log(" Before Claims Override Details:", JSON.stringify(event));
+
+event.response = {
+  "claimsAndScopeOverrideDetails": {
+    "accessTokenGeneration": {
+      "claimsToAddOrOverride": {
+        //"zoneinfo": "ABCDD",
+        "custom:region": region
+      }
+  }
+  }
+};
+
+//console.log(" After Claims Override Details:", JSON.stringify(event));
+// Return to Amazon Cognito
+context.done(null, event);
+};
